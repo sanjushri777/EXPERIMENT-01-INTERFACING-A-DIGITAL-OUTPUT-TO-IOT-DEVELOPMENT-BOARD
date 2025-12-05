@@ -1,109 +1,112 @@
+
+###  NAME: SANJUSHRI A
+###  ROLL NO : 212223040187
+###  DEPARTMENT: CSE
+
+
+
 # EXPERIMENT-01-INTERFACING-A-DIGITAL-OUTPUT-TO-IOT-DEVELOPMENT-BOARD
 
+## Aim: To Interface a Digital output (LED) to ARM IOT development board and write a  program to blink an led 
+## Components required: STM32 CUBE IDE, ARM IOT development board,  STM programmer tool.
+## Theory 
+The full form of an ARM is an advanced reduced instruction set computer (RISC) machine, and it is a 32-bit processor architecture expanded by ARM holdings. The applications of an ARM processor include several microcontrollers as well as processors. The architecture of an ARM processor was licensed by many corporations for designing ARM processor-based SoC products and CPUs. This allows the corporations to manufacture their products using ARM architecture. Likewise, all main semiconductor companies will make ARM-based SOCs such as Samsung, Atmel, TI etc.
 
-**DATE:**
+What is an ARM7 Processor?
+ARM7 processor is commonly used in embedded system applications. Also, it is a balance among classic as well as new-Cortex sequence. This processor is tremendous in finding the resources existing on the internet with excellence documentation offered by NXP Semiconductors. It suits completely for an apprentice to obtain in detail hardware & software design implementation.
+LPC2148 Microcontroller
+ The LPC2148 microcontroller is designed by Philips (NXP Semiconductor) with several in-built features & peripherals. Due to these reasons, it will make more reliable as well as the efficient option for an application developer. LPC2148 is a 16-bit or 32-bit microcontroller based on ARM7 family.
+Features of LPC2148
+The main features of LPC2148 include the following.
+•	The LPC2148 is a 16 bit or 32 bit ARM7 family based microcontroller and available in a small LQFP64 package.
+•	ISP (in system programming) or IAP (in application programming) using on-chip boot loader software.
+•	On-chip static RAM is 8 kB-40 kB, on-chip flash memory is 32 kB-512 kB, the wide interface is 128 bit, or accelerator allows 60 MHz high-speed operation.
+•	It takes 400 milliseconds time for erasing the data in full chip and 1 millisecond time for 256 bytes of programming.
+•	Embedded Trace interfaces and Embedded ICE RT offers real-time debugging with high-speed tracing of instruction execution and on-chip Real Monitor software.
+•	It has 2 kB of endpoint RAM and USB 2.0 full speed device controller. Furthermore, this microcontroller offers 8kB on-chip RAM nearby to USB with DMA.
+•	One or two 10-bit ADCs offer 6 or 14 analogs i/ps with low conversion time as 2.44 μs/ channel.
+•	Only 10 bit DAC offers changeable analog o/p.
+•	External event counter/32 bit timers-2, PWM unit, & watchdog.
+•	Low power RTC (real time clock) & 32 kHz clock input.
+•	Several serial interfaces like two 16C550 UARTs, two I2C-buses with 400 kbit/s speed.
+•	5 volts tolerant quick general purpose Input/output pins in a small LQFP64 package.
+•	Outside interrupt pins-21.
+•	60 MHz of utmost CPU CLK-clock obtainable from the programmable-on-chip phase locked loop by resolving time is 100 μs.
+•	The incorporated oscillator on the chip will work by an exterior crystal that ranges from 1 MHz-25 MHz
+•	The modes for power-conserving mainly comprise idle & power down.
+•	For extra power optimization, there are individual enable or disable of peripheral functions and peripheral CLK scaling.
+ 
+ 
 
-**NAME:**
-
-**ROLL NO:**
-
-**DEPARTMENT:**
-
-## Aim
-
-To Interface a Digital output (LED) to ARM IOT development board and write a program to blink an LED.
-
-## Components required
-
-- STM32 CUBE IDE
-- ARM IOT development board
-- STM programmer tool
-
-## Theory
-
-The ARM (Advanced RISC Machine) architecture is widely used in microcontrollers and processors due to its efficiency, low power consumption, and high performance. ARM processors follow the Reduced Instruction Set Computing (RISC) design, making them ideal for embedded systems, mobile devices, and IoT applications. Many well-known semiconductor companies, including STMicroelectronics, use ARM-based architectures to develop powerful and energy-efficient microcontrollers.
-
-One such microcontroller is the STM32WLE5JC, which is part of the STM32 family and is based on the ARM Cortex-M4 core. It is specifically designed for LoRaWAN® and other sub-GHz wireless communication applications, making it ideal for IoT and LPWAN (Low Power Wide Area Network) solutions. This microcontroller integrates a LoRa® transceiver, eliminating the need for an external radio module and reducing both cost and power consumption. With a maximum clock speed of 48 MHz, 256 KB of Flash memory, and 64 KB of RAM, it provides enough computing power for real-time data processing and wireless communication.
-
-The STM32WLE5JC is known for its ultra-low power consumption, making it perfect for battery-operated IoT devices such as smart agriculture sensors, environmental monitoring systems, industrial automation, and asset tracking. It supports multiple communication interfaces, including I2C, SPI, and UART, allowing seamless integration with various sensors and peripherals. Additionally, it features built-in security capabilities such as AES 256-bit encryption and a True Random Number Generator (TRNG) for secure data transmission.
-
-With its power-efficient design, built-in LoRaWAN support, and flexible communication options, the STM32WLE5JC is an excellent choice for developers looking to build long-range, low-power IoT applications. It is fully compatible with STM32CubeIDE and LoRaWAN middleware, making development and deployment easier for engineers and learners alike.
-
-## Procedure
-
-1. Click on STM 32 CUBE IDE, the following screen will appear
-   
+## Procedure:
+ 1. click on STM 32 CUBE IDE, the following screen will appear 
  ![image](https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png)
 
-
-2. Click on FILE, click on new stm 32 project
-   
-![image](https://user-images.githubusercontent.com/36288975/226189215-2d13ebfb-507f-44fc-b772-02232e97c0e3.png)
+ 2. click on FILE, click on new stm 32 project 
+ ![image](https://user-images.githubusercontent.com/36288975/226189215-2d13ebfb-507f-44fc-b772-02232e97c0e3.png)
 ![image](https://user-images.githubusercontent.com/36288975/226189230-bf2d90dd-9695-4aaf-b2a6-6d66454e81fc.png)
+3. select the target to be programmed  as shown below and click on next 
 
-3. Select the target to be programmed as shown below and click on next
-   
-![Screenshot 2025-03-11 134231](https://github.com/user-attachments/assets/09e61f3d-224f-4ca8-96d4-7336869df5c7)
+![image](https://user-images.githubusercontent.com/36288975/226189280-ed5dcf1d-dd8d-43ae-815d-491085f4863b.png)
 
-4. Select the program name
-   
+4.select the program name 
 ![image](https://user-images.githubusercontent.com/36288975/226189316-09832a30-4d1a-4d4f-b8ad-2dc28f137711.png)
 
-5. Corresponding ioc file will be generated automatically
-   
-![Screenshot 2025-03-11 134528](https://github.com/user-attachments/assets/df427edd-e24a-4612-a858-aeae859b379f)
+
+5. corresponding ioc file will be generated automatically 
+![image](https://user-images.githubusercontent.com/36288975/226189378-3abbdee2-0df6-470f-a3cd-79c74e3d3ad8.png)
+
+6.select the appropriate pins as gipo, in or out, USART or required options and configure 
+![image](https://user-images.githubusercontent.com/36288975/226189403-f7179f1a-3eae-4637-826b-ab4ec35ba1e1.png)
+![image](https://user-images.githubusercontent.com/36288975/226189425-2b2414ce-49b3-4b61-a260-c658cb2e4152.png)
 
 
-6. Select the appropriate pins as GPIO, in or out, USART or required options and configure
-   
-![Screenshot 2025-03-11 134617](https://github.com/user-attachments/assets/125ee548-30b1-4c88-932f-adf07984522f)
-
-![Screenshot 2025-03-11 134642](https://github.com/user-attachments/assets/0adfbb58-4cad-408a-9300-f4808b53cac4)
-
-
-7. Click on Ctrl+S, automatically C program will be generated
-   
-![Screenshot 2025-03-11 134709](https://github.com/user-attachments/assets/70b83b79-1569-4f14-99d5-e2adbb4e692d)
-
-8. Edit the program and as per required 
-
+7.click on cntrl+S , automaticall C program will be generated 
+![image](https://user-images.githubusercontent.com/36288975/226189443-8b43451d-0b14-47e4-a20b-cc09c6ad8458.png)
+![image](https://user-images.githubusercontent.com/36288975/226189450-85ffa969-2ffb-4788-81e5-72d60fdda0f1.png)
+8. edit the program and as per required 
 ![image](https://user-images.githubusercontent.com/36288975/226189461-a573e62f-a109-4631-a250-a20925758fe0.png)
 
-
-9. Use project and build all 
-
+9. use project and build all 
 ![image](https://user-images.githubusercontent.com/36288975/226189554-3f7101ac-3f41-48fc-abc7-480bd6218dec.png)
-
-10. Once the project is bulild 
-
+10. once the project is bulild 
 ![image](https://user-images.githubusercontent.com/36288975/226189577-c61cc1eb-3990-4968-8aa6-aefffc766b70.png)
 
-11. connect the iot board to power supply and usb
-
-12. After connecting open the STM cube programmer
-
-![Screenshot 2025-03-11 135208](https://github.com/user-attachments/assets/bb67ab6b-81a5-450c-b170-4276a9b87ef2)
+11. click on debug option 
+![image](https://user-images.githubusercontent.com/36288975/226189625-37daa9a3-62e9-42b5-a5ce-2ac63345905b.png)
 
 
-13. Connect the STM board through the COM port, then upload the corresponding project ELF file/Hex file or Bin file in Erasing & Programming Window,while ensuring the board is in flash mode, and click on 'Start Program'.
-    
-    ![image](https://github.com/user-attachments/assets/9383531d-8204-4697-9321-55afb6abee2e)
-
-14.  After the file download is complete, switch your board to run mode and press the reset button to see the output
+12. connect the stm nucleo board and click on run 
+![image](https://user-images.githubusercontent.com/36288975/226189649-b5dff389-91df-4eca-b84a-1127c6562637.png)
 
 
 
 
 
 
-## STM 32 CUBE PROGRAM
+## STM 32 CUBE PROGRAM :
+```
+  while (1)
+
+  {
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+	  HAL_Delay(2000);
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+	  HAL_Delay(2000);
+
+  }
 
 ```
-// Your STM 32 CUBE Program code here
-```
 
-## OUTPUT
 
-## Result
 
+## OUTPUT  :
+
+![Screenshot 2024-08-17 045251](https://github.com/user-attachments/assets/f2e048a6-e394-499e-bd5f-e4ad275a28aa)
+
+
+
+ 
+ 
+## Result :
 Interfacing a digital output with ARM microcontroller based IOT development is executed and the results are verified.
